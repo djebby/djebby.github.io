@@ -1,0 +1,93 @@
+.nav-bar {
+  background: #20232a;
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 3;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    display: block;
+    padding: 8px 0;
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 75%;
+    }
+  }
+  nav {
+    a {
+      font-size: 30px;
+      display: block;
+      position: relative;
+      text-decoration: none;
+      margin-bottom: 30px;
+      i {
+        transition: all 0.3s ease-out;
+      }
+      &:hover {
+        color: #ffd700;
+        svg {
+          opacity: 0;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+      &:after {
+        content: "";
+        font-size: 10px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+      &:first-child {
+        &:after {
+          content: "HOME";
+        }
+      }
+    }
+    a.about-link {
+      &:after {
+        content: "ABOUT";
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: "CONTACT";
+        font-size: 7px;
+      }
+    }
+    a.active {
+      svg {
+        color: #ffd700;
+      }
+    }
+  }
+  ul {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    li {
+        margin-bottom: 20px;
+      a {
+          font-size: 23px;
+          svg:hover {
+              color: #1da1f2;
+          }
+      }
+    }
+  }
+}
