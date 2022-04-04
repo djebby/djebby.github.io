@@ -37,3 +37,12 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+  .about-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    // background-color: black;
+  }
+}
