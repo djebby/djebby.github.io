@@ -36,6 +36,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
 }
 
 @media (max-width: 768px) {

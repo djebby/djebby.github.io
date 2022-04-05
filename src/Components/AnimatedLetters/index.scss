@@ -22,10 +22,18 @@
 }
 
 @for $i from 1 through 35 {
-  .text-animate._#{&i} {
+  .text-animate._#{$i} {
     animation-delay: #{$i / 10}s;
   }
 }
+
+
+// @for $i from 1 through 35 {
+//   .text-animate._#{$i} {
+//     animation-delay: #{$i / 10}s;
+//   }
+// }
+
 
 @media (min-width: 768px) {
   .text-animate {
