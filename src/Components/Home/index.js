@@ -4,7 +4,7 @@ import Loader from "react-loaders";
 
 import AnimatedLetters from "../AnimatedLetters";
 import Logo from "../../assets/images/f-logo.png";
-import homeIllustration from "../../assets/images/home-draw.png";
+import homeIllustration from "../../assets/images/home-draw.svg";
 import "./index.scss";
 
 const Home = () => {
