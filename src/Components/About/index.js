@@ -32,12 +32,12 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm very ambitious fullstack web developer, i mainly use ReactJS in
+            I'm very ambitious full stack web developer, i mainly use ReactJS in
             frontend, NodeJS/ExpressJS in backend and MongoDB as database.
           </p>
           <p>
             I always loved coding, I love diving into complex problems and
-            solving them, I'have severel project in my github profil that i
+            solving them, I have several project in my github profile that i
             invite you to take look at them.
           </p>
           <p>
