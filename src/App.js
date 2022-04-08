@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Layout from "./Components/Layout";
 import Home from "./Components/Home";
@@ -13,6 +13,7 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path="about" element={<About/>}/>
         <Route path="contact" element={<Contact/>}/>
+        <Route path="*" element={<Navigate to="/"/>} />
       </Route>
     </Routes>
   );
