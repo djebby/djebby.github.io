@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from "react";
-import emailjs, { init } from "@emailjs/browser";
+// import emailjs, { init } from "@emailjs/browser";
 import Loader from "react-loaders";
 
 import AnimatedLetters from "../AnimatedLetters";
 import messaging from "../../assets/images/messaging.svg";
 import "./index.scss";
 
-init("7suhuS1Knmji5asTd");
+// init("7suhuS1Knmji5asTd");
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const form = useRef();
@@ -18,14 +18,14 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm("service_o1c3f9h", "template_z0c7e87", form.current).then(
-      function (response) {
-        alert("SUCCESS!");
-      },
-      function (error) {
-        alert("FAILED...");
-      }
-    );
+    // emailjs.sendForm("service_o1c3f9h", "template_z0c7e87", form.current).then(
+    //   function (response) {
+    //     alert("SUCCESS!");
+    //   },
+    //   function (error) {
+    //     alert("FAILED...");
+    //   }
+    // );
   };
   return (
     <>
@@ -39,9 +39,11 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            {`
+              I am interested in freelance opportunities - especially ambitious or
+              large projects. However, if you have other request or question,
+              don't hesitate to contact me using below form either.
+            `}
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -67,7 +69,6 @@ const Contact = () => {
                 </li>
                 <li>
                   <textarea
-                    plaeholder="Message"
                     name="message"
                     placeholder="Content"
                     required

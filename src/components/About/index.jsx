@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
 import Loader from "react-loaders";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGitAlt,
-  faJsSquare,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
+import { faReact, faDocker } from "@fortawesome/free-brands-svg-icons";
 
 import AnimatedLetters from "../AnimatedLetters";
-import mongoDb from "../../assets/images/mongodb.png";
+
 import nodeJs from "../../assets/images/nodejs.svg";
-import typeScript from "../../assets/images/typescript.svg";
+import postgresql from "../../assets/images/postgresql.svg";
+import spring from "../../assets/images/spring.svg";
+import nginx from "../../assets/images/nginx.svg";
 import "./index.scss";
 
 const About = () => {
@@ -32,8 +30,10 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm very ambitious full stack web developer, i mainly use ReactJS in
-            frontend, NodeJS/ExpressJS in backend and MongoDB as database.
+            {`
+              I'm very ambitious full stack web developer, i mainly use ReactJS in
+              frontend, NodeJS/ExpressJS in backend and MongoDB as database.
+            `}
           </p>
           <p>
             I always loved coding, I love diving into complex problems and
@@ -41,9 +41,11 @@ const About = () => {
             invite you to take look at them.
           </p>
           <p>
-            I'am basically a self-taught developer and i have a bachelor's
-            degree in network and telecommunication, I'm also interested in
-            development of iot and cyber physical systems.
+            {`
+              I'am basically a self-taught developer and i have a bachelor's
+              degree in network and telecommunication, I'm also interested in
+              development of iot and cyber physical systems.
+            `}
           </p>
         </div>
         <div className="stage-cube-cont">
@@ -52,19 +54,19 @@ const About = () => {
               <img src={nodeJs} alt="nodejs svg icon" />
             </div>
             <div className="face2">
-              <img src={mongoDb} alt="mongodb" />
+              <img src={spring} alt="spring" />
             </div>
             <div className="face3">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
             <div className="face4">
-              <img src={typeScript} alt="typescript" />
+              <img src={postgresql} alt="postgresql" />
             </div>
             <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+              <img src={nginx} alt="nginx" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faDocker} color="#1D63ED" />
             </div>
           </div>
         </div>

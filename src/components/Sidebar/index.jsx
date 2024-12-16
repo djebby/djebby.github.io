@@ -1,12 +1,7 @@
-import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 import sidebarLogo from "../../assets/images/sidebar-logo.png";
 import "./index.scss";
@@ -39,7 +34,7 @@ const Sidebar = () => {
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noreferrer" href="https://twitter.com/Firas_Djebby">
+          <a target="_blank" rel="noreferrer" href="https://x.com/Firas_Djebby">
             <FontAwesomeIcon icon={faTwitter} color="#fff" />
           </a>
         </li>

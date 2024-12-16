@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import "./index.scss";
 
 const AnimatedLetters = ({ letterClass, strArray, idx }) => {
@@ -11,5 +13,11 @@ const AnimatedLetters = ({ letterClass, strArray, idx }) => {
     </span>
   );
 };
+
+AnimatedLetters.propTypes = {
+  letterClass: PropTypes.string,
+  strArray: PropTypes.arrayOf(PropTypes.string),
+  idx: PropTypes.number,
+}
 
 export default AnimatedLetters;

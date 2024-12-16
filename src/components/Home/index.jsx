@@ -40,7 +40,7 @@ const Home = () => {
             <span className={`${letterClass} _12`}>i,</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+            <span className={`${letterClass} _14`}>{"'m"}</span>
             <img src={Logo} alt="Junior Full Stack Developer Name" />
             <AnimatedLetters
               letterClass={letterClass}
@@ -54,7 +54,7 @@ const Home = () => {
               idx={19}
             />
           </h1>
-          <h2>Full Stack Developer / MERN Stack</h2>
+          <h2>Full Stack Java Developer With Strong DevOps Knowledge</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
