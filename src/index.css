@@ -1,32 +1,9 @@
-/* @import "animate.css";
-@import "~loaders.css/src/animations/pacman.scss"; */
-
-@font-face {
-  font-family: "Helvetica Neue";
-  src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "La Belle Aurore";
-  src: url("./assets/fonts/LaBelleAurore.woff2") format("woff2"),
-    url("./assets/fonts/LaBelleAurore.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Coolvetica";
-  src: url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2"),
-    url("./assets/fonts/CoolveticaRg-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
 
 input,
 textarea {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Ramabhadra", sans-serif;
 }
 
 .loader-hidden {
@@ -50,8 +27,19 @@ textarea {
 
 body {
   margin: 0;
-  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  font: 300 11px/1.4 'Ramabhadra', 'sans-serif';
   overflow: hidden;
   display: block;
   background-color: #282c34;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #a33469;
+}
+
+::selection {
+  color: white;
+  background: #a33469;
 }

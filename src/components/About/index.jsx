@@ -31,8 +31,13 @@ const About = () => {
           </h1>
           <p>
             {`
-              I'm very ambitious full stack web developer, i mainly use ReactJS in
-              frontend, NodeJS/ExpressJS in backend and MongoDB as database.
+              I'm a passionate and dedicated web developer with expertise in building dynamic, scalable,
+              and efficient web applications. On the frontend, I specialize in React, creating responsive and user-friendly interfaces. 
+              My backend experience spans Node.js, Express.js, and Spring Boot, enabling me to craft robust APIs and server-side logic. 
+              I work seamlessly with various database systems, including MongoDB, MySQL, and PostgreSQL, 
+              ensuring reliable and efficient data management. Beyond development, 
+              I have a solid foundation in DevOps, leveraging tools like Docker, Nginx, and AWS Cloud to streamline deployment, scalability, 
+              and system reliability. With a commitment to delivering high-quality solutions.
             `}
           </p>
           <p>

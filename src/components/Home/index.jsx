@@ -41,7 +41,7 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>{"'m"}</span>
-            <img src={Logo} alt="Junior Full Stack Developer Name" />
+            <img src={Logo} alt="Full Stack Developer Name" />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -54,7 +54,7 @@ const Home = () => {
               idx={19}
             />
           </h1>
-          <h2>Full Stack Java Developer With Strong DevOps Knowledge</h2>
+          <h2>Full-Stack Web Developer with Good DevOps Knowledge.</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
