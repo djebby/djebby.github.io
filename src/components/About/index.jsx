@@ -27,7 +27,7 @@ const About = () => {
               letterClass={letterClass}
               strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
               idx={15}
-            />
+              />
           </h1>
           <p>
             {`
