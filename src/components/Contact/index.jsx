@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from "react";
-// import emailjs, { init } from "@emailjs/browser";
 import Loader from "react-loaders";
 
 import AnimatedLetters from "../AnimatedLetters";
 import messaging from "../../assets/images/messaging.svg";
 import "./index.scss";
 
-// init("7suhuS1Knmji5asTd");
+
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const form = useRef();
@@ -16,17 +15,32 @@ const Contact = () => {
     }, 3000);
   }, []);
 
+  
+
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs.sendForm("service_o1c3f9h", "template_z0c7e87", form.current).then(
-    //   function (response) {
-    //     alert("SUCCESS!");
-    //   },
-    //   function (error) {
-    //     alert("FAILED...");
-    //   }
-    // );
+    const [name, email, subject, content] = [e.target[0].value, e.target[1].value, e.target[2].value, e.target[3].value];
+    fetch(`${import.meta.env.VITE_API_URL}/api/v1/send-email`, {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        subject,
+        content
+      })
+    })
+    .then((resp) => resp.json())
+    .then((data) => {
+      console.log({ data });
+    })
+    .catch(err => alert(err));
   };
+
+
   return (
     <>
       <div className="container contact-page">

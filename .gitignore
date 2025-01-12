@@ -26,3 +26,4 @@ dist-ssr
 todo.md
 certs/*.crt
 certs/*.key
+.env
