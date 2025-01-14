@@ -20,7 +20,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     const [name, email, subject, content] = [e.target[0].value, e.target[1].value, e.target[2].value, e.target[3].value];
-    fetch(`${import.meta.env.VITE_API_URL}/api/v1/send-email`, {
+    fetch(`/api/v1/send-email`, {
       method: 'POST',
       mode: 'cors',
       headers: {
